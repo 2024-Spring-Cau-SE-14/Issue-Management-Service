@@ -31,7 +31,7 @@ public class ProjectDB implements ProjectRepository {
     @Override
     public Project save(Project project) {
         if (project.getProjectId() == null) {
-            project.setProjectId(UniqueIDGenerator.generateUniqueId());
+            project.setProjectId(generateUniqueProjectId());
         }
 
         //DB 상에 프로젝트가 이미 있을 때
@@ -152,6 +152,20 @@ public class ProjectDB implements ProjectRepository {
         }
         return 1;
     }
+
+    private int generateUniqueProjectId() {
+        String sql = "SELECT MAX(project_id) AS max_id FROM projects";
+        try (Statement statement = connection.createStatement();
+             ResultSet resultSet = statement.executeQuery(sql)) {
+            if (resultSet.next()) {
+                return resultSet.getInt("max_id") + 1;
+            }
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+        }
+        return 1;
+    }
+
 
     @Override
     public Optional<Project> findById(long id) {
