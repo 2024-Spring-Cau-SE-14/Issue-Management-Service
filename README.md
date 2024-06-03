@@ -9,7 +9,7 @@ https://dev.mysql.com/downloads/mysql/ 에서 MySQL server 설치. (최신 버�
 cd web-server\src\main\java\com\se14\repository\db_impl
 ```
 ```
-mysql -u root -p > schema.sql
+mysql -u root -p < schema.sql
 ```
 
 ## MySQL server 설치 시 설정했던 root 계정 password 입력.
