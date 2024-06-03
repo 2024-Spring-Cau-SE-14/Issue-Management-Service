@@ -28,6 +28,7 @@ db-connection.bat
 ```
 ### Set Database Connection for OSX or Unix
 ```
+chmod +x db-connection.sh
 ./db-connection.sh
 ```
 ### Build Executable Jar
