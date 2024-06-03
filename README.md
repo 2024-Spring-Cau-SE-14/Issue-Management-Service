@@ -1,5 +1,5 @@
 # Issue-Management-Service
-## Mysql Setup 
+## Mysql Setup  &nbsp; [Visit](https://dev.mysql.com/downloads/mysql/)
 ```
 https://dev.mysql.com/downloads/mysql/ 에서 MySQL server 설치. (최신 버전 8.4.0)
 ```
