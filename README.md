@@ -7,12 +7,12 @@ https://dev.mysql.com/downloads/mysql/ 에서 MySQL server 설치. (최신 버�
 mysql -u root -p
 '''
 
-##MySQL server 설치 시 설정했던 root 계정 password 입력.
+## MySQL server 설치 시 설정했던 root 계정 password 입력.
 '''
 Enter password: {your password}
 '''
 
-##schema.sql 스키마 코드를 복사후 붙여넣기. 
+## schema.sql 스키마 코드를 복사후 붙여넣기. 
 '''
 mysql> {schema.sql code goes here} 
 '''
