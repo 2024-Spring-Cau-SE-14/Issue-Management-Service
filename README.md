@@ -6,17 +6,15 @@ https://dev.mysql.com/downloads/mysql/ 에서 MySQL server 설치. (최신 버�
 
 ## 설치 후 cmd 실행. 
 ```
-mysql -u root -p
+cd web-server\src\main\java\com\se14\repository\db_impl
+```
+```
+mysql -u root -p > schema.sql
 ```
 
 ## MySQL server 설치 시 설정했던 root 계정 password 입력.
 ```
 Enter password: {your password}
-```
-
-## schema.sql 스키마 코드를 복사후 붙여넣기. 
-```
-mysql> {schema.sql code goes here} 
 ```
 
 ## Web-Server
